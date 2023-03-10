@@ -1,0 +1,10 @@
+name: Run Shell Commands
+on: [push, fork] #events
+jobs:
+  run-shekl-command:
+    run-on: ubuntut-latest #runner
+    name: Print Hello World
+    steps:
+    - uses: actions/checkout@v3
+    - name: cat file
+      run: cat hello-world.txt
