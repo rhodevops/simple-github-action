@@ -1,7 +1,7 @@
 name: Run Shell Commands
 on: [push, fork] #events
 jobs:
-  run-shekl-command:
+  run-shell-command:
     runs-on: ubuntut-latest #runner
     name: Print Hello World
     steps:
