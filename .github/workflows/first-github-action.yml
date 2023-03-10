@@ -1,11 +1,9 @@
 name: Run Shell Commands
-on: [push, fork] #events
+on: [push]
 
 jobs:
   run-shell-command:
-    runs-on: ubuntut-latest #runner
-    name: Print Hello World
+    runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - name: cat file
-      run: cat hello-world.txt
+      - name: Echo a String
+        run: echo "Hello Security Gurus!! This is our first GitHub Actions Workflow file"
